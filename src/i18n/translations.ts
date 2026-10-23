@@ -1,0 +1,77 @@
+export type Role = 'patient' | 'doctor' | 'admin';
+
+export interface AppState {
+  role: Role;
+  currentPatientId: string;
+  currentDoctorId: string;
+  language: 'en' | 'hi' | 'mr';
+}
+
+export const translations = {
+  en: {
+    dashboard: 'Dashboard',
+    healthRecords: 'Health Records',
+    appointments: 'Appointments',
+    medications: 'Medications',
+    reports: 'Reports',
+    emergencyId: 'Emergency ID',
+    privacyAccess: 'Privacy & Access',
+    patients: 'Patients',
+    emergency: 'Emergency',
+    aiAgent: 'AI Health Agent',
+    referrals: 'Referrals',
+    resources: 'Resources',
+    doctors: 'Doctors',
+    goodMorning: 'Good Morning',
+    tagline: 'One Connected Health Journey',
+    openEmergencyProfile: 'Open Emergency Profile',
+    viewCompleteRecord: 'View Complete Health Record',
+    startEmergencyDemo: 'Start Emergency Demo',
+    scanQR: 'Scan QR',
+    enterHealthId: 'Enter Health ID',
+  },
+  hi: {
+    dashboard: 'डैशबोर्ड',
+    healthRecords: 'स्वास्थ्य रिकॉर्ड',
+    appointments: 'अपॉइंटमेंट',
+    medications: 'दवाएं',
+    reports: 'रिपोर्ट',
+    emergencyId: 'आपातकालीन ID',
+    privacyAccess: 'गोपनीयता',
+    patients: 'मरीज़',
+    emergency: 'आपातकाल',
+    aiAgent: 'AI स्वास्थ्य सहायक',
+    referrals: 'रेफरल',
+    resources: 'संसाधन',
+    doctors: 'डॉक्टर',
+    goodMorning: 'सुप्रभात',
+    tagline: 'एक जुड़ी हुई स्वास्थ्य यात्रा',
+    openEmergencyProfile: 'आपातकालीन प्रोफ़ाइल खोलें',
+    viewCompleteRecord: 'पूरा रिकॉर्ड देखें',
+    startEmergencyDemo: 'आपातकालीन डेमो शुरू करें',
+    scanQR: 'QR स्कैन करें',
+    enterHealthId: 'Health ID दर्ज करें',
+  },
+  mr: {
+    dashboard: 'डॅशबोर्ड',
+    healthRecords: 'आरोग्य नोंदी',
+    appointments: 'भेट',
+    medications: 'औषधे',
+    reports: 'अहवाल',
+    emergencyId: 'आणीबाणी ID',
+    privacyAccess: 'गोपनीयता',
+    patients: 'रुग्ण',
+    emergency: 'आणीबाणी',
+    aiAgent: 'AI आरोग्य सहाय्यक',
+    referrals: 'रेफरल',
+    resources: 'साधने',
+    doctors: 'डॉक्टर',
+    goodMorning: 'सुप्रभात',
+    tagline: 'एक जोडलेला आरोग्य प्रवास',
+    openEmergencyProfile: 'आणीबाणी प्रोफाइल उघडा',
+    viewCompleteRecord: 'संपूर्ण नोंद पहा',
+    startEmergencyDemo: 'आणीबाणी डेमो सुरू करा',
+    scanQR: 'QR स्कॅन करा',
+    enterHealthId: 'Health ID टाका',
+  },
+};
